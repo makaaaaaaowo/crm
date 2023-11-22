@@ -1,5 +1,5 @@
 {% extends 'webapp/base.html' %}
-
+{% load static %}
 {% load crispy_forms_tags %}
 
 
@@ -8,10 +8,11 @@
 <body>
 
     <div class="container bg-light shadow-md p-5 form-layout">
+        <link rel="stylesheet" href="{% static 'css/update.css' %}">
 
-        <h3> Update record </h3>
+        <h3> Actualizar registro </h3>
 
-        <h6> Update your record down below. </h6>
+        <h6> Actualiza los registros que necesites. </h6>
 
         <hr>
         <br>
@@ -55,7 +56,7 @@
 
             <button type="submit" class="btn btn-info"> 
                 
-                Update record &nbsp; <i class="fa fa-plus" aria-hidden="true"></i>
+                Actualizar datos &nbsp; <i class="fa fa-plus" aria-hidden="true"></i>
             
             </button>
 
@@ -64,7 +65,7 @@
             <a href="{% url 'dashboard' %}" class="btn btn-secondary"> 
 
 
-                Return &nbsp; <i class="fa fa-arrow-left" aria-hidden="true"></i>
+                Regresar &nbsp; <i class="fa fa-arrow-left" aria-hidden="true"></i>
 
             </a>
 

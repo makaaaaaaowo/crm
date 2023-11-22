@@ -1,51 +1,23 @@
 {% extends 'webapp/base.html' %}
-
+{% load static %}
 {% load crispy_forms_tags %}
 
-
 {% block content %}
+<div class="container bg-light shadow-md p-5 form-layout">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <h3> Inicia sesión </h3>
+    <h5> ¡Bienvenido de vuelta! </h5>
+    <hr>
 
-    <body>
+    <form method="POST" autocomplete="off">
+        {% csrf_token %}
+        {{ form.username|as_crispy_field }}
+        {{ form.password|as_crispy_field }}
+        <button type="submit" class="btn btn-primary w-100 p-2"> Iniciar sesión <i class="fa fa-key" aria-hidden="true"></i> </button>
+    </form>
 
-        <div class="container bg-light shadow-md p-5 form-layout">
-
-            <h3> Inicia sesión </h3>
-            <h5> ¡Bienvenido de vuelta! </h5>
-
-            <hr>
-            <br>
-
-            <form method="POST" autocomplete="off">
-
-                {% csrf_token %}
-
-                {{form.username|as_crispy_field}}
-
-                <br>
-
-                {{form.password|as_crispy_field}}
-
-                <br>
-
-                <button type="submit" class="btn btn-primary w-100 btn-block p-2"> Iniciar sesión &nbsp; <i class="fa fa-key" aria-hidden="true"></i> </button>
-
-
-            </form>
-
-            <br>
-
-            <div class="text-center">
-
-                <p> ¿No tienes una cuenta? </p> <a href="{% url 'register' %}"> Registrate </a>
-
-            </div>
-
-
-        </div>
-
-        <br>
-
-    </body>
-
+    <div class="text-center">
+        <p> ¿No tienes una cuenta? </p> <a href="{% url 'register' %}"> Regístrate </a>
+    </div>
+</div>
 {% endblock %}
-

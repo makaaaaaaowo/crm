@@ -1,8 +1,11 @@
 
+{% load static %}
+
+{% block content %}
 
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary justify-content-center">
-
+  <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
     <a class="navbar-brand main-heading" href="{% url '' %}"> 
             
       &nbsp; Proyecto CRM
@@ -79,3 +82,4 @@
   
   
   </nav>
+  {% endblock %}

@@ -1,0 +1,59 @@
+
+
+.container {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Fondo blanco para que resalte el formulario */
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem auto;
+  width: 90%;
+  max-width: 500px; /* Ancho máximo para el formulario */
+}
+
+h3, h5 {
+  color: #5c6bc0; /* Color inspirado en la estética Pixar */
+  text-align: center;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.as_crispy_field {
+  margin-bottom: 1rem;
+}
+
+.btn-primary {
+  background-color: #7e57c2; /* Morado claro */
+  color: white;
+  border: none;
+  border-radius: 20px; /* Bordes redondeados para el botón */
+  padding: 10px;
+  margin-top: 1rem;
+  transition: background-color 0.2s, transform 0.2s;
+  font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+  background-color: #673ab7; /* Morado oscuro al pasar el mouse */
+  transform: scale(1.05); /* Efecto de crecimiento al pasar el mouse */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.text-center p {
+  color: #9e9e9e; /* Color gris para el texto */
+}
+
+.text-center a {
+  color: #7e57c2; /* Enlaces en morado para hacerlos resaltar */
+  text-decoration: none;
+}
+
+.text-center a:hover {
+  text-decoration: underline; /* Subrayado al pasar el mouse para mejorar la interactividad */
+}

@@ -1,14 +1,16 @@
 {% extends 'webapp/base.html' %}
+{% load static %}
 
-{% block content %}
+{% block content %} 
+    <link rel="stylesheet" href="{% static 'css/dashboard.css' %}">
 
-    <h5> Welcome, {{user}}! 👋 </h5>
+    <h5> Bienvenido, {{user}}! 👋 </h5>
 
     <hr>
 
     <a class="btn btn-outline-primary btn-sm" href="{% url 'create-record' %}">
 
-        Create a new record &nbsp; <i class="fa fa-plus-circle" aria-hidden="true"></i>
+        Crear un nuevo registro &nbsp; <i class="fa fa-plus-circle" aria-hidden="true"></i>
 
     </a>
 
@@ -21,17 +23,17 @@
             <tr>
 
                 <th scope="col"> ID </th>
-                <th scope="col"> Full name </th>
+                <th scope="col"> Nombre completo </th>
                 <th scope="col"> Email </th>
-                <th scope="col"> Phone </th>
-                <th scope="col"> Address </th>
-                <th scope="col"> City </th>
-                <th scope="col"> Province </th>
-                <th scope="col"> Country </th>
+                <th scope="col"> Telefono </th>
+                <th scope="col"> Dirección </th>
+                <th scope="col"> Ciudad </th>
+                <th scope="col"> Valparaíso </th>
+                <th scope="col"> País </th>
 
-                <th scope="col"> Date joined </th>
+                <th scope="col"> Fecha de ingreso </th>
 
-                <th scope="col"> View </th>
+                <th scope="col"> Ver más </th>
 
             </tr>
 
