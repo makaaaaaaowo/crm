@@ -34,8 +34,9 @@
 /* Cambio de color al pasar el mouse sobre los elementos de la barra de navegación */
 .nav-link:hover, .navbar-brand:hover {
   color: #a1dab4; /* Verde pastel */
-  background-color: rgba(255, 255, 255, 0.2); /* Fondo ligeramente visible */
-  border-radius: 5px; /* Bordes redondeados */
+  background-color: rgba(255, 255, 255, 0.2); 
+  border-radius: 5px; 
+
 }
 
 

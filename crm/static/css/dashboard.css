@@ -1,13 +1,13 @@
 :root {
   --primary-color: #9c27b0; /* Un morado más vibrante */
-  --secondary-color: #ffffff; /* Blanco */
-  --accent-color: #ff4081; /* Un rosa fuerte para acentos */
-  --shadow-color: rgba(0, 0, 0, 0.2); /* Color de sombra para efectos */
+  --secondary-color: #ffffff; 
+  --accent-color: #ff4081; 
+  --shadow-color: rgba(0, 0, 0, 0.2); 
 }
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f3e5f5; /* Un fondo suave */
+  background-color: #f3e5f5; 
 }
 
 h5 {
