@@ -87,7 +87,7 @@ DATABASES = {
         'NAME': 'django_crm',
         'USER': 'root',
         'PASSWORD': '',
-        'PORT': '3307', 
+        'PORT': '3306', 
 
     }
 }
