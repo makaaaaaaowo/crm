@@ -1,0 +1,42 @@
+/* Estilos para la barra de navegación con tonos pastel */
+.navbar {
+  background-color: #a1dab4; /* Verde pastel */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logotipo de la marca */
+.navbar-brand {
+  font-size: 1.6rem;
+  color: #fdd9b5; /* Amarillo pastel */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Elementos de la barra de navegación */
+.nav-link {
+  color: #fbb1bd; /* Rosa pastel */
+  transition: color 0.2s, background-color 0.2s;
+}
+
+/* Iconos de la barra de navegación */
+.fa {
+  margin-right: 0.5rem;
+}
+
+/* Estilos para el botón de navegación en pantallas pequeñas */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(251, 177, 189, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Cambio de color al pasar el mouse sobre los elementos de la barra de navegación */
+.nav-link:hover, .navbar-brand:hover {
+  color: #a1dab4; /* Verde pastel */
+  background-color: rgba(255, 255, 255, 0.2); 
+  border-radius: 5px; 
+
+}
+
+

@@ -1,0 +1,96 @@
+:root {
+  --primary-color: #9c27b0; /* Un morado más vibrante */
+  --secondary-color: #ffffff; 
+  --accent-color: #ff4081; 
+  --shadow-color: rgba(0, 0, 0, 0.2); 
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f3e5f5; 
+}
+
+h5 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.btn {
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 4px 8px var(--shadow-color);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-outline-primary {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  background-color: transparent;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+a {
+  color: var(--accent-color);
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+.table {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px var(--shadow-color);
+}
+
+.table-light {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.table-hover tbody tr {
+  transition: background-color 0.2s;
+}
+
+.table-hover tbody tr:hover {
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
+}
+
+/* Estilo para los íconos de Font Awesome */
+.fa {
+  transition: transform 0.2s;
+}
+
+.fa-plus-circle {
+  color: var(--primary-color);
+}
+
+.fa-plus-circle:hover {
+  transform: scale(1.2);
+}
+
+.fa-eye {
+  color: var(--secondary-color);
+}
+
+/* Estilo para los enlaces 'Ver más' dentro de la tabla */
+.btn-success {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-success:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}

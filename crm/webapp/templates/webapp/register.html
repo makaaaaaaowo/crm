@@ -1,56 +1,25 @@
 {% extends 'webapp/base.html' %}
+{% load static %}
 
 {% load crispy_forms_tags %}
 
 {% block content %}
+<div class="container bg-light shadow-md p-5 form-layout">
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <h3> Crea tu cuenta </h3>
+    <h5> ¡Comienza a gestionar tus clientes hoy mismo! </h5>
+    <hr>
 
-    <body>
+    <form method="POST" autocomplete="off">
+        {% csrf_token %}
+        {{ form.username|as_crispy_field }}
+        {{ form.password1|as_crispy_field }}
+        {{ form.password2|as_crispy_field }}
+        <button type="submit" class="btn btn-primary w-100 p-2"> Regístrate <i class="fa fa-user" aria-hidden="true"></i> </button>
+    </form>
 
-        <div class="container bg-light shadow-md p-5 form-layout">
-
-            <h3> Crea tu cuenta </h3>
-
-            <h5> ¡Comienza a gestionar tus clientes hoy mismo!
-            </h5>
-
-            <hr>
-            <br>
-
-            <form method="POST" autocomplete="off">
-
-                {% csrf_token %}
-
-                {{form.username|as_crispy_field}}
-
-                <br>
-
-                {{form.password1|as_crispy_field}}
-
-                <br>
-
-                {{form.password2|as_crispy_field}}
-
-                <br>
-
-                <button type="submit" class="btn btn-primary w-100 btn-block p-2"> Registrate &nbsp; <i class="fa fa-user" aria-hidden="true"></i> </button>
-
-
-            </form>
-
-            <br>
-
-            <div class="text-center">
-
-                <p> ¿Ya tienes una cuenta? </p> <a href="{% url 'my-login' %}"> Inicia sesión </a>
-
-            </div>
-
-
-        </div>
-
-        <br>
-
-    </body>
-
-
+    <div class="text-center">
+        <p> ¿Ya tienes una cuenta? </p> <a href="{% url 'my-login' %}"> Inicia sesión </a>
+    </div>
+</div>
 {% endblock %}

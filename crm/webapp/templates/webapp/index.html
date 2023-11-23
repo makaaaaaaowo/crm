@@ -1,30 +1,18 @@
 {% extends 'webapp/base.html' %}
-
-
+{% load static %}
 
 {% block content %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<body>
+    <div class="welcome-container">
+        <h3 class="welcome-title">¡Gestión de usuarios!</h3>
+        <h5 class="welcome-subtitle">¡Mantente al día!</h5>
+        <img src="https://img.freepik.com/vector-gratis/conjunto-avatar-personas-sonrientes-coleccion-diferentes-personajes-hombres-mujeres_1150-41072.jpg?w=2000" alt="Descripción de la imagen" class="welcome-image">
 
-    <body>
-
-        <br>
-        <br>
-
-        <div class="text-center">
-
-            <h3> Proyecto CRM, en su mejor momento!</h3>
-
-            <br>
-
-            <h5> Mantente al dia! </h5>
-
-            <hr>
-
-            <br>            
-
-            <a class="btn btn-primary" type="button" href="{%url 'register' %}"> Registrate </a>
-
-        </div>
-
-    </body>
-
+        <hr class="welcome-divider">
+        <a class="btn welcome-btn" href="{% url 'register' %}">Regístrate</a>
+    </div>
+</body>
 {% endblock %}
+
+

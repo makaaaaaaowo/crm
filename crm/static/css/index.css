@@ -1,0 +1,72 @@
+/* Estilos globales */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #e7f2f8; 
+}
+
+/* Contenedor principal con sombra más suave y colores pastel */
+.welcome-container {
+  text-align: center;
+  padding: 50px;
+  background-image: linear-gradient(to right top, #9734d5, #d7b6ec); 
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin: auto;
+  max-width: 600px;
+  color: #333; 
+}
+
+/* Títulos con sombra de texto suave */
+.welcome-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.welcome-subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #5d5a6d;
+}
+
+.welcome-divider {
+  border-color: #fff;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+/* Botones con colores pastel y sombra suave */
+.btn {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  text-transform: uppercase;
+  background-color: #fefbd8; 
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+  text-decoration: none;
+  color: #5d5a6d; 
+}
+
+.btn-primary {
+  background-color: #fbd8e7; 
+}
+
+.btn-primary:hover {
+  background-color: #fab4d6; 
+  transform: scale(1.05);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3); 
+}
+
+/* Imagen con bordes redondeados y sombra suave */
+.welcome-image {
+  width: 300px; 
+  border-radius: 15px; 
+  margin-bottom: 1rem; 
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
